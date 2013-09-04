@@ -40,7 +40,7 @@ func ArgParse(args [][]byte) *ArgParser {
 }
 
 // set x testing123
-func (self *ArgParser) Rules(v ...int) *ArgParse {
+func (self *ArgParser) Rules(v ...int) *ArgParser {
 	self.rule_exp = append(self.rule_exp, v...)
 	self.rule_cnt = len(self.rule_exp)
 	return self
@@ -55,4 +55,5 @@ func (self *ArgParser) Parse() [][]byte {
 			}
 		}
 	}
+	return nil
 }
