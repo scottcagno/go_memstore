@@ -16,6 +16,9 @@ func boolToString(ok bool) string {
 	return "ERR"
 }
 
+
+/*
+
 // arg parser
 type ArgParser struct {
 	args     [][]byte
@@ -57,3 +60,4 @@ func (self *ArgParser) Parse() [][]byte {
 	}
 	return nil
 }
+*/
